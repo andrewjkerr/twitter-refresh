@@ -9,6 +9,7 @@ To install, just enable "Developer mode" in the extensions page in Chrome and dr
 ##To-do
 
 * Add as a button on the top navbar
+* Remember user setting for auto-refresh
 * Clean up code a bit
 
 ##Version History
