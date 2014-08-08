@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Twitter AutoRefresh",
+	"version": "1.0",
+	"description": "Adds option to refresh your timeline if there is a new tweet.",
+	"icons": {"128": "icons/icon.png" },
+	"author": "Andrew Kerr",
+	"content_scripts": [
+		{
+			"matches": ["*://www.twitter.com/",
+					    "*://twitter.com/"],
+			"js": ["twitter-autorefresh.js"]
+		}
+	],
+	"short_name": "twitrefresh"
+}
