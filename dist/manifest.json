@@ -8,9 +8,26 @@
 	"content_scripts": [
 		{
 			"matches": ["*://www.twitter.com/",
-					    "*://twitter.com/"],
+					    		"*://twitter.com/"],
 			"js": ["twitter-autorefresh.js"]
 		}
 	],
-	"short_name": "twitrefresh"
+  "background": {
+    "scripts": ["bootstrap.js"],
+    "persistent": false
+  },
+	"short_name": "twitrefresh",
+  "permissions": [
+    "tabs",
+    "*://twitter.com/",
+    "*://www.twitter.com/"
+  ],
+	"page_action": {
+    "default_icon": {
+        "19": "icons/icon19.png",
+        "38": "icons/icon38.png"
+    },
+    "default_title": "Twitter AutoRefresh",
+    "default_popup": "popup.html"
+	}
 }
