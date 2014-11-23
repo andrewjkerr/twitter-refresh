@@ -9,7 +9,8 @@ Install via the [Chrome Web Store](https://chrome.google.com/webstore/detail/twi
 ##Version History
 
 ```
-2.0: Changed to using Chrome storage and page_action.
-1.1: Added support for remembering user setting.
-1.0: Initial commit.
+2.0.1: Fixed issue with loading checkbox correctly.
+2.0.0: Changed to using Chrome storage and page_action.
+1.1.0: Added support for remembering user setting.
+1.0.0: Initial commit.
 ```

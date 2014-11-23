@@ -12,10 +12,11 @@
 
 $(document).ready(function() {
 
+
   var bool = false;
 
   chrome.storage.sync.get("auto_refresh", function(val) {
-      bool = val;
+      bool = val["auto_refresh"];
   });
 
   chrome.storage.onChanged.addListener(function(changes, namespace) {

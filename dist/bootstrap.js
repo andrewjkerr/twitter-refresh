@@ -8,8 +8,8 @@
 // Set auto_refresh to true when installed
 chrome.runtime.onInstalled.addListener(function(details) {
   chrome.storage.sync.set({'auto_refresh': true}, function() {
-    // Notify that we saved.
-    console.log('Settings saved');
+    // Notify that we have successfully installed!
+    console.log('Successful install!');
   });
 });
 
