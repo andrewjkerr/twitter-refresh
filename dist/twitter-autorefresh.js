@@ -26,19 +26,18 @@ $(document).ready(function() {
     }
   });
 
-	// Check to see whether the title has changed (title change == new tweets!)
-	var target = document.querySelector('head > title');
-	var observer = new window.WebKitMutationObserver(function(mutations) {
-	    mutations.forEach(function(mutation) {
+  // Check to see whether the title has changed (title change == new tweets!)
+  var target = document.querySelector('head > title');
+  var observer = new window.WebKitMutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
 
-			// If the title changed and the user wants to refresh, "click" the new-tweets-bar to load the tweets!
-			if(bool)
-			{
-				$('.new-tweets-bar').trigger("click");
-			}
-	    });
-	});
+      // If the title changed and the user wants to refresh, "click" the new-tweets-bar to load the tweets!
+      if(bool) {
+        $('.new-tweets-bar').trigger("click");
+      }
+    });
+  });
 
-	// Observe whether the title has changed
-	observer.observe(target, { subtree: true, characterData: true, childList: true });
+  // Observe whether the title has changed
+  observer.observe(target, { subtree: true, characterData: true, childList: true });
 });

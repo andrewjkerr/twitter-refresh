@@ -27,8 +27,6 @@
     "default_icon": {
         "19": "icons/icon19.png",
         "38": "icons/icon38.png"
-    },
-    "default_title": "Twitter AutoRefresh",
-    "default_popup": "popup.html"
+    }
 	}
 }
