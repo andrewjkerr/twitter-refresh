@@ -9,6 +9,7 @@ Install via the [Chrome Web Store](https://chrome.google.com/webstore/detail/twi
 ##Version History
 
 ```
+2.1.0: Settings now update on page_action click instead of popup input box.
 2.0.1: Fixed issue with loading checkbox correctly.
 2.0.0: Changed to using Chrome storage and page_action.
 1.1.0: Added support for remembering user setting.
